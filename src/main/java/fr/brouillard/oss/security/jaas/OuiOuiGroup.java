@@ -29,7 +29,7 @@ public class OuiOuiGroup implements Group {
     public OuiOuiGroup(String name) {
         this.name = name;
     }
-    
+
     public String getName() {
         return name;
     }
@@ -43,10 +43,14 @@ public class OuiOuiGroup implements Group {
     }
 
     public boolean isMember(Principal member) {
-        return identities.contains(member);
+        return identities.contains(member) 
+                || identities.stream()
+                            .filter(p -> Group.class.isAssignableFrom(p.getClass()))
+                            .map(p -> Group.class.cast(p))
+                            .anyMatch(g -> g.isMember(member));
     }
 
-    public Enumeration<? extends Principal> members() {
+    public Enumeration<Principal> members() {
         return Collections.enumeration(identities);
     }
 }
