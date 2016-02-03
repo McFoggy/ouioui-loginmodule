@@ -1,4 +1,4 @@
-# OuiOuiLoginModule
+# OuiOuiLoginModule [![Build Status](https://travis-ci.org/McFoggy/ouioui-loginmodule.svg?branch=master)](https://travis-ci.org/McFoggy/ouioui-loginmodule)
 
 The 'Noddy' login module is a no deps JAAS compliant LoginModule mainly focused for tests, load tests or integration scenarios.
 
