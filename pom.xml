@@ -20,12 +20,48 @@
 
     <groupId>fr.brouillard.oss.security.jaas</groupId>
     <artifactId>ouioui-loginmodule</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Oui-Oui LoginModule :: Parent</name>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>9</version>
+    </parent>
+
+    <name>Oui-Oui LoginModule</name>
     <url>https://github.com/McFoggy/ouioui-loginmodule</url>
+
+    <organization>
+        <name>Matthieu Brouillard</name>
+        <url>http://oss.brouillard.fr</url>
+    </organization>
+
     <inceptionYear>2015</inceptionYear>
+
+    <scm>
+        <connection>scm:git:https://github.com/McFoggy/ouioui-loginmodule.git</connection>
+        <developerConnection>scm:git:https://github.com/McFoggy/ouioui-loginmodule.git</developerConnection>
+        <url>http://oss.brouillard.fr/projects/ouiouiloginmodule/</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>http://github.com/McFoggy/ouioui-loginmodule/issues</url>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <id>McFoggy</id>
+            <name>Matthieu Brouillard</name>
+            <timezone>Europe/Paris</timezone>
+            <url>http://blog.matthieu.brouillard.fr</url>
+            <roles>
+                <role>project creator</role>
+            </roles>
+        </developer>
+    </developers>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
