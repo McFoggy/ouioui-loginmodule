@@ -20,11 +20,12 @@
 
     <groupId>fr.brouillard.oss.security.jaas</groupId>
     <artifactId>ouioui-loginmodule</artifactId>
-    <version>1.0.1-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>Oui-Oui LoginModule</name>
     <url>https://github.com/McFoggy/ouioui-loginmodule</url>
+    <description>no deps JAAS compliant LoginModule mainly focused on tests, load tests and integration tests scenarios</description>
 
     <organization>
         <name>Matthieu Brouillard</name>
