@@ -16,7 +16,12 @@ The LoginModule has very few available options (is one very few ? ;-) )
 
 - `roles`: a comma separated list of role names that will be assigned to the authenticated principal during authorization phase
 
-## Wildfly usage
+## Use cases
+
+- __user is not that important__: if your application does not store/use data from the user but relies on their login/role only then ouioui-loginmodule is a perfect tool to load test it. 
+- __users are meaningful but you don't know their login__: in such cases you can benefit from the ouioui-loginmodule ability to authenticate automatically your calls and then delegate to the rest of the JAAS stack (using _tryFirstPass_) to fill-in expected roles & principals.
+
+## Wildfly integration
 
 The project produce a ready to use wildfly module.
 
